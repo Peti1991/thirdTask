@@ -1,6 +1,9 @@
 import './app.css'
 import App from './App.svelte'
 
+import { makeServer } from './api'
+makeServer({ environment: 'development' })
+
 const app = new App({
   target: document.getElementById('app'),
 })

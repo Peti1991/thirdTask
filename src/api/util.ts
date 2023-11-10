@@ -11,7 +11,7 @@ export type Response<Type> = {
 }
 //URL átír
 const client = axios.create({
-  baseURL: "http://localhost:3000"
+  baseURL: "https://demoapi.com"
 })
 
 const validate = <Schema extends z.ZodTypeAny>(data: unknown, schema: Schema): z.infer<typeof schema> | null => {
