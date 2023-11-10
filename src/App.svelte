@@ -24,7 +24,7 @@
     isShowingClients = false
     let response = await getClients(search)
     if (!response.success) {
-      return alert(`Could not load messages (${response.status})`)
+      return alert(`Could not data: (${response.status})`)
     }
     clients = response.data
 
